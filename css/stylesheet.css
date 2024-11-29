@@ -1,0 +1,258 @@
+/* variables */
+:root {
+    --main-color: rgb(239, 224, 185);
+    --secondary-color: rgb(71, 73, 74);
+    --dark-color: rgb(46, 48, 49);
+    --light-color: lightgrey;
+}
+
+
+/* 
+----------------------------------
+        HTML Selector
+----------------------------------
+*/
+
+html {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0px;
+    background-color: var(--main-color);
+    font-weight: 200;
+    font-style: normal;
+    font-size: 0.5rem;
+    max-width:900px;
+}
+
+body {
+    margin: auto;
+    /* give minimum width of the web page */
+    min-width: 200px;
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1,
+h2 {
+    display: flex;
+    justify-content: center;
+    color: var(--dark-color);
+    font-size: 1.5rem;
+}
+
+p {
+    display: flex;
+    margin: 15px;
+    padding: 10px 3px 10px 3px;
+}
+
+
+
+
+button{
+    width:200px;
+    height: auto;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 10px;
+    border: 3px solid black;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    
+}
+
+
+/* 
+---------------------------------
+        Class Selector
+---------------------------------
+*/
+
+.dice_img {
+    width: 100px;
+    height: auto;
+}
+
+.player_wins {
+    color: green;
+}
+
+.computer_wins {
+    color: red;
+}
+
+.char_img{
+
+    height: 200px;
+    width: auto;
+}
+
+
+/* 
+--------------------------------- 
+        ID Selector 
+---------------------------------
+*/
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+   
+}
+
+
+#dice_only_div{
+    display:flex;
+
+}
+
+
+#player_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#computer_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#result_popup{
+    border:2px solid black;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    display:none;
+    background-color: rgba(200, 230, 246, 0.8);
+    padding:15px;
+}
+
+
+
+#popup_close_btn_div{
+    display: flex;
+    justify-content: end;
+}
+
+#result_popup_close_btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(238, 91, 91);
+    width:30px;
+    height:30px;
+    border-radius:15px;
+
+}
+
+
+#popup_winner_result{
+    display: flex;
+    justify-content: center;
+}
+
+#winner_img{
+    width: 80%;
+    height:auto;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#bar_container{
+    width:80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    display:flex;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    margin:5px auto;
+}
+
+#player_bar{
+    width:50%;
+    background-color: lightblue;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    text-align: center;
+}
+
+#computer_bar{
+    width: 50%;
+    background-color: rgb(242, 69, 69);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+
+
+#btn_div {
+    display:flex;
+    flex-direction: column;
+}
+
+/* 
+----------------------------------------------------------
+        add media queries as needed for wider viewport
+----------------------------------------------------------
+*/
+
+@media (min-width: 530px) {
+    html {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 730px) {
+
+
+    #dice_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .dice_img {
+        width: 150px;
+        height: auto;
+    }
+
+    #btn_div {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+@media (min-width:1002px) {}
+
+
+
+
+
+

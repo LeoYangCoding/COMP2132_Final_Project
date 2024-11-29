@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <script src="../js/jQuery3.7.1.js" defer></script>
+    <script src="../js/javascript.js" defer></script>
+
+    <title>COMP 2132 Project - Leo (Tingtao Yang)</title>
+</head>
+<body>
+    <div id="warpper">
+        <div>
+            <h1>Dice Game</h1>
+            <h2>- Leo (Tingtao Yang)</h2>
+        </div>
+
+
+        <div id="dice_section">
+            <div id="player_section">
+                <h2>Your Dices</h2>
+                <div id="dice_only_div">
+                    <img class='dice_img' id='player_dice1_img' src="../images/dice-0.gif" alt="rolling_dice">
+                    <img class='dice_img' id='player_dice2_img' src="../images/dice-0.gif" alt="rolling_dice">
+                </div>
+            
+                <div id="player_round_result">The score for this round: N/A</div>
+                <div id="player_overall_result">The overall score: N/A</div>
+            
+            </div>
+            
+            <div id="computer_section">
+                <h2>Computer Dices</h2>
+                <div id="dice_only_div">
+                    <img class='dice_img' id='computer_dice1_img' src="../images/dice-0.gif" alt="rolling_dice">
+                    <img class='dice_img' id='computer_dice2_img' src="../images/dice-0.gif" alt="rolling_dice">
+                </div>
+            
+                <div id="computer_round_result">The score for this round: N/A </div>
+                <div id="computer_overall_result">The overall score: N/A </div>
+            
+            </div>
+
+        </div>
+        
+        <div id="result_popup">
+            <div id="popup_close_btn_div">
+                <button id="result_popup_close_btn">X</button>
+            </div>
+
+            <div id="popup_result">
+                <h1 id="popup_winner_result"></h1>
+                <img id='winner_img' src="" alt="winner's image">
+            </div>
+
+        </div>
+
+        <section id="winner_section">
+            <h1 id="winner_result"></h1>
+
+            <div id="bar_container">
+                <div id="player_bar">0</div>
+                <div id="computer_bar">0</div>
+            </div>
+
+            <div>
+                <img id='human_img' class='char_img' src="../images/human_stand.png" alt="human_stand">
+                <img id='robot_img' class='char_img' src="../images/robot_stand.png" alt="robot_stand">
+            </div>
+
+
+        </section>
+
+        <section>
+            <div id="btn_div">
+                <button id="btn_roll">Let's Roll!</button>
+                <button id="btn_reset">Reset</button>
+            </div>
+    
+        </section>
+    </div>
+</body>
+</html>
