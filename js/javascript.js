@@ -115,13 +115,13 @@ $('#btn_roll').on('click',function(){
 
 
         if (playerTotal > computerTotal){
-            $(`#winner_result`).text(`You are leading!`).addClass('player_wins');
+            $(`#winner_result`).text(`You are leading!`).attr('class', 'player_wins');
             $('#human_img').attr('src','../images/human_win.png')
             $('#robot_img').attr('src','../images/robot_lose.png')
         }else if( playerTotal == computerTotal){
             $(`#winner_result`).text(`Draw!`);
         }else{
-            $(`#winner_result`).text(`Computer is leading!`).addClass('computer_wins')
+            $(`#winner_result`).text(`Computer is leading!`).attr('class', 'computer_wins')
             $('#human_img').attr('src','../images/human_lose.png')
             $('#robot_img').attr('src','../images/robot_win.png')
         }
@@ -135,8 +135,8 @@ $('#btn_roll').on('click',function(){
         if(rollCount==3){
             $('#btn_roll').text(`Another game.`)
             if (playerTotal > computerTotal){
-                $(`#winner_result`).text(`You win the game!`).addClass('player_wins')
-                $(`#popup_winner_result`).text(`You win the game!`).addClass('player_wins')
+                $(`#winner_result`).text(`You win the game!`).attr('class', 'player_wins')
+                $(`#popup_winner_result`).text(`You win the game!`).attr('class', 'player_wins')
                 $('#human_img').attr('src','../images/human_win.png')
                 $('#robot_img').attr('src','../images/robot_lose.png')
                 $('#winner_img').attr('src','../images/human_win.png')
@@ -146,8 +146,8 @@ $('#btn_roll').on('click',function(){
             }else if( playerTotal === computerTotal){
                 $(`#winner_result`).text(`Draw!`);
             }else{
-                $(`#winner_result`).text(`Computer wins the game!`).addClass('computer_wins');
-                $(`#popup_winner_result`).text(`Computer wins the game!`).addClass('computer_wins');
+                $(`#winner_result`).text(`Computer wins the game!`).attr('class', 'computer_wins');
+                $(`#popup_winner_result`).text(`Computer wins the game!`).attr('class', 'computer_wins');
                 $('#human_img').attr('src','../images/human_lose.png')
                 $('#robot_img').attr('src','../images/robot_win.png')
                 $('#winner_img').attr('src','../images/robot_win.png')
