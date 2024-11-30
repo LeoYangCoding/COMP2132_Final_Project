@@ -115,13 +115,22 @@ $('#btn_roll').on('click',function(){
 
 
         if (playerTotal > computerTotal){
-            $(`#winner_result`).text(`You are leading!`).attr('class', 'player_wins');
+            $(`#winner_result`).text(`You are leading!`).attr('class', 'player_wins').css({
+                'border':'3px outset grey',
+                'padding': '10px'
+            });
             $('#human_img').attr('src','../images/human_win.png')
             $('#robot_img').attr('src','../images/robot_lose.png')
         }else if( playerTotal == computerTotal){
-            $(`#winner_result`).text(`Draw!`);
+            $(`#winner_result`).text(`Draw!`).css({
+                'border':'3px outset grey',
+                'padding': '10px'
+            });;
         }else{
-            $(`#winner_result`).text(`Computer is leading!`).attr('class', 'computer_wins')
+            $(`#winner_result`).text(`Computer is leading!`).attr('class', 'computer_wins').css({
+                'border':'3px outset grey',
+                'padding': '10px'
+            });
             $('#human_img').attr('src','../images/human_lose.png')
             $('#robot_img').attr('src','../images/robot_win.png')
         }

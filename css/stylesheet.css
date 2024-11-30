@@ -56,7 +56,7 @@ p {
 
 
 button{
-    width:200px;
+    width:100px;
     height: auto;
     padding: 20px;
     border-radius: 30px;
@@ -76,7 +76,7 @@ button{
 */
 
 .dice_img {
-    width: 100px;
+    width: 60px;
     height: auto;
 }
 
@@ -90,7 +90,7 @@ button{
 
 .char_img{
 
-    height: 200px;
+    height: 100px;
     width: auto;
 }
 
@@ -170,10 +170,7 @@ button{
 }
 
 
-#winner_result{
-    border:3px outset grey ;
-    padding: 10px;
-}
+
 
 #popup_winner_result{
     border-bottom: 10px double gold;
@@ -191,7 +188,7 @@ button{
 }
 
 #bar_container{
-    width:80%;
+    width:150px;
     border: 1px solid black;
     border-radius: 10px;
     display:flex;
@@ -239,6 +236,22 @@ button{
     h2 {
         font-size: 1.4rem;
     }
+    .dice_img {
+        width: 100px;
+        height: auto;
+    }
+    .char_img {
+
+        height: 150px;
+        width: auto;
+    }
+
+    #bar_container {
+        width: 80%;
+    }
+    button {
+        width: 200px;
+    }
 }
 
 @media (min-width: 730px) {
@@ -254,14 +267,17 @@ button{
         height: auto;
     }
 
+    .char_img {
+
+        height: 200px;
+        width: auto;
+    }
+
     #btn_div {
         display: flex;
         flex-direction: row;
     }
 }
-
-
-@media (min-width:1002px) {}
 
 
 
