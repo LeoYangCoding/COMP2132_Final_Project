@@ -169,6 +169,18 @@ button{
     justify-content: center;
 }
 
+
+#winner_result{
+    border:3px outset grey ;
+    padding: 10px;
+}
+
+#popup_winner_result{
+    border-bottom: 10px double gold;
+}
+
+
+
 #winner_img{
     width: 80%;
     height:auto;
